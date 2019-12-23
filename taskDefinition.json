@@ -86,36 +86,24 @@
                 ]
             },
             "secrets": [
-                {
-                    "name": "",
-                    "valueFrom": ""
-                }
             ],
             "hostname": "",
             "user": "",
-            "workingDirectory": "",
+            "workingDirectory": "/etc/cicd_test",
             "disableNetworking": true,
             "privileged": true,
             "readonlyRootFilesystem": true,
             "dnsServers": [
-                ""
             ],
             "dnsSearchDomains": [
-                ""
             ],
             "extraHosts": [
-                {
-                    "hostname": "",
-                    "ipAddress": ""
-                }
             ],
             "dockerSecurityOptions": [
-                ""
             ],
             "interactive": true,
             "pseudoTerminal": true,
             "dockerLabels": {
-                "KeyName": ""
             },
             "ulimits": [
                 {
