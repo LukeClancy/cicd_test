@@ -92,10 +92,6 @@
         "EC2"
     ],
     "tags": [
-        {
-            "key": "",
-            "value": ""
-        }
     ],
     "pidMode": "task",
     "ipcMode": "host"
