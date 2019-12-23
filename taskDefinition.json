@@ -7,7 +7,7 @@
         {
             "name": "cicd_test_container",
             "image": "https://hub.docker.com/_/ruby:2.5",
-            "memory": 500
+            "memory": 500,
             "links": [
             ],
             "portMappings": [
