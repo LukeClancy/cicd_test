@@ -4,13 +4,13 @@
     "executionRoleArn": "GitHub",
     "networkMode": "awsvpc",
     "cpu": "256",
-    "memory": "1 GB",
+    "memory": "1024",
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
             "image": "https://hub.docker.com/_/ruby:2.5",
             "cpu": "256",
-            "memory": "1 GB",
+            "memory": "1024",
             "links": [
             ],
             "portMappings": [
@@ -63,6 +63,14 @@
             "pseudoTerminal": true,
             "dockerLabels": {
             },
+            "logConfiguration": { 
+                "logDriver": "awslogs",
+                "options": { 
+                    "awslogs-group" : "/ecs/fargate-task-definition",
+                    "awslogs-region": "us-west-2",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
             "ulimits": [
                 {
                     "name": "nice",
