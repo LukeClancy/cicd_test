@@ -158,7 +158,7 @@
     ],
     "volumes": [
         {
-            "name": "",
+            "name": "cicd_test_volume",
             "host": {
                 "sourcePath": ""
             },
