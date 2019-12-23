@@ -40,7 +40,7 @@
             "volumesFrom": [
             ],
             "linuxParameters": {
-                "initProcessEnabled": true,
+                "initProcessEnabled": true
             },
             "secrets": [
             ],
