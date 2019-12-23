@@ -2,7 +2,7 @@
     "family": "cicd_test_task",
     "taskRoleArn": "GitHub",
     "executionRoleArn": "GitHub",
-    "networkMode": "bridge",
+    "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
