@@ -3,8 +3,8 @@
     "taskRoleArn": "GitHub",
     "executionRoleArn": "GitHub",
     "networkMode": "awsvpc",
-    "cpu": 256,
-    "memory": 1,
+    "cpu": "256",
+    "memory": "1",
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
