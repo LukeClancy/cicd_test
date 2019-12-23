@@ -89,7 +89,7 @@
     "placementConstraints": [
     ],
     "requiresCompatibilities": [
-        "EC2"
+        "FARGATE"
     ],
     "pidMode": "task",
     "ipcMode": "host"
