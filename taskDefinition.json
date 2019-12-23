@@ -74,22 +74,7 @@
                 "options": {
                     "KeyName": ""
                 }
-            },
-            "healthCheck": {
-                "command": [
-                    ""
-                ],
-                "interval": 0,
-                "timeout": 0,
-                "retries": 0,
-                "startPeriod": 0
-            },
-            "systemControls": [
-                {
-                    "namespace": "",
-                    "value": ""
-                }
-            ]
+            }
         }
     ],
     "volumes": [
@@ -102,7 +87,6 @@
         }
     ],
     "placementConstraints": [
-
     ],
     "requiresCompatibilities": [
         "EC2"
