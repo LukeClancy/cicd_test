@@ -11,9 +11,11 @@ RUN apt-get update
 
 RUN mkdir /etc/cicd_test
 WORKDIR /etc/cicd_test
-COPY Gemfile Gemfile.lock ./
+COPY helloWorld/Gemfile helloWorld/Gemfile.lock ./
 RUN bundle install
 
 COPY . .
+
+WORKDIR /etc/cicd_test/helloWorld
 
 CMD ["rails", "server"]
