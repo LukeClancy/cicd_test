@@ -70,7 +70,7 @@
                     "awslogs-region": "us-west-2",
                     "awslogs-stream-prefix": "ecs"
                 }
-            }
+            },
             "ulimits": [
                 {
                     "name": "nice",
