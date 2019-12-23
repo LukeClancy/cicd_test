@@ -159,9 +159,6 @@
     "volumes": [
         {
             "name": "cicd_test_volume",
-            "host": {
-                "sourcePath": ""
-            },
             "dockerVolumeConfiguration": {
                 "scope": "task",
                 "autoprovision": true,
