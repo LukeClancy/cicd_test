@@ -1,5 +1,7 @@
 {
     "family": "cicd_test_task",
+    "taskRoleArn": "",
+    "executionRoleArn": "",
     "networkMode": "bridge",
     "containerDefinitions": [
         {
