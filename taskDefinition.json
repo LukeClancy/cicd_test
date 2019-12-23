@@ -66,13 +66,7 @@
                     "softLimit": 500,
                     "hardLimit": 1000
                 }
-            ],
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "KeyName": "cicd_test"
-                }
-            }
+            ]
         }
     ],
     "volumes": [
