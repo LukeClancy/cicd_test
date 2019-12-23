@@ -46,7 +46,7 @@
             ],
             "user": "luke",
             "workingDirectory": "/etc/cicd_test",
-            "privileged": true,
+            "privileged": false,
             "readonlyRootFilesystem": true,
             "dnsServers": [
             ],
