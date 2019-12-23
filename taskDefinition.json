@@ -184,8 +184,6 @@
     "requiresCompatibilities": [
         "EC2"
     ],
-    "cpu": "",
-    "memory": "",
     "tags": [
         {
             "key": "",
