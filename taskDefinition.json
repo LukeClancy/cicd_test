@@ -68,9 +68,9 @@
                 }
             ],
             "logConfiguration": {
-                "logDriver": "syslog",
+                "logDriver": "awslogs",
                 "options": {
-                    "KeyName": ""
+                    "KeyName": "cicd_test"
                 }
             }
         }
