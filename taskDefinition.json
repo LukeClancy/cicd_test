@@ -31,34 +31,16 @@
                 }
             ],
             "essential": true,
-            "entryPoint": [
-            ],
             "command": [
                 "rails server"
-            ],
-            "environment": [
-            ],
-            "mountPoints": [
-            ],
-            "volumesFrom": [
             ],
             "linuxParameters": {
                 "initProcessEnabled": true
             },
-            "secrets": [
-            ],
             "user": "luke",
             "workingDirectory": "/etc/cicd_test",
             "privileged": false,
             "readonlyRootFilesystem": true,
-            "dnsServers": [
-            ],
-            "dnsSearchDomains": [
-            ],
-            "extraHosts": [
-            ],
-            "dockerSecurityOptions": [
-            ],
             "interactive": true,
             "pseudoTerminal": true,
             "dockerLabels": {
@@ -89,9 +71,7 @@
             }
         }
     ],
-    "placementConstraints": [
-    ],
     "requiresCompatibilities": [
-        "FARGATE"
+        "EC2"
     ]
 }
