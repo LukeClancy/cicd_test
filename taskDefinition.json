@@ -6,15 +6,11 @@
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
-            "image": "https://hub.docker.com/_/ubuntu:latest",
-            "repositoryCredentials": {
-                "credentialsParameter": ""
-            },
+            "image": "https://hub.docker.com/_/ruby:2.5",
             "cpu": 0,
             "memory": 0,
             "memoryReservation": 0,
             "links": [
-                ""
             ],
             "portMappings": [
                 {
