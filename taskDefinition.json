@@ -34,53 +34,13 @@
                 "rails server"
             ],
             "environment": [
-                {
-                    "name": "",
-                    "value": ""
-                }
             ],
             "mountPoints": [
-                {
-                    "sourceVolume": "",
-                    "containerPath": "",
-                    "readOnly": true
-                }
             ],
             "volumesFrom": [
-                {
-                    "sourceContainer": "",
-                    "readOnly": true
-                }
             ],
             "linuxParameters": {
-                "capabilities": {
-                    "add": [
-                        ""
-                    ],
-                    "drop": [
-                        ""
-                    ]
-                },
-                "devices": [
-                    {
-                        "hostPath": "",
-                        "containerPath": "",
-                        "permissions": [
-                            "mknod"
-                        ]
-                    }
-                ],
                 "initProcessEnabled": true,
-                "sharedMemorySize": 0,
-                "tmpfs": [
-                    {
-                        "containerPath": "",
-                        "size": 0,
-                        "mountOptions": [
-                            ""
-                        ]
-                    }
-                ]
             },
             "secrets": [
             ],
