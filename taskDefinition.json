@@ -44,7 +44,6 @@
             },
             "secrets": [
             ],
-            "hostname": "meHost",
             "user": "luke",
             "workingDirectory": "/etc/cicd_test",
             "disableNetworking": true,
