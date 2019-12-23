@@ -81,6 +81,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: EC2
+        service: cicd_test_service
         cluster: mootCluster
         wait-for-service-stability: true
