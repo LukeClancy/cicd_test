@@ -1,7 +1,7 @@
 {
     "family": "cicd_test_task",
-    "taskRoleArn": "admin",
-    "executionRoleArn": "admin",
+    "taskRoleArn": "GitHub",
+    "executionRoleArn": "GitHub",
     "networkMode": "bridge",
     "containerDefinitions": [
         {
