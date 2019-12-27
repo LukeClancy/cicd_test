@@ -8,7 +8,7 @@
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
-            "image": "ruby:2.5",
+            "image": "cicd_test:latest",
             "cpu": "256",
             "memory": "1024",
             "links": [
@@ -32,7 +32,7 @@
             ],
             "essential": true,
             "command": [
-                "rails server"
+                "rails", "server"
             ],
             "linuxParameters": {
                 "initProcessEnabled": true
