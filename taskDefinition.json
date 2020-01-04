@@ -1,5 +1,7 @@
 {
     "family": "cicd_test_task",
+    "taskRoleArn": "ECSJustWork",
+    "executionRoleArn": "ECSJustWork",
     "networkMode": "awsvpc",
     "cpu": "256",
     "memory": "512",
