@@ -60,14 +60,22 @@
                     "hardLimit": 1000
                 }
             ]
+            "mountPoints": [
+                "sourceVolume": "test_scratch",
+                "containerPath": "/var/scratch"
+            ]
         }
     ],
     "volumes": [
         {
+            "name": "test_scratch",
+            "host": {}
+        }
+        {
             "name": "cicd_test_volume",
             "dockerVolumeConfiguration": {
                 "scope": "task",
-                "autoprovision": false
+                "autoprovision": true
             }
         }
     ],
