@@ -72,7 +72,7 @@
         {
             "name": "test_scratch",
             "host": {}
-        }
+        },
         {
             "name": "cicd_test_volume",
             "dockerVolumeConfiguration": {
