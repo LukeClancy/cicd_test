@@ -75,7 +75,6 @@
         }
     ],
     "requiresCompatibilities": [
-        "EC2",
         "FARGATE"
     ]
 }
