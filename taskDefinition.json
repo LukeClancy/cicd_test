@@ -40,7 +40,7 @@
                 "initProcessEnabled": true
             },
             "user": "luke",
-            "workingDirectory": "/etc/cicd_test",
+            "workingDirectory": "/etc/cicd_test/helloWorld",
             "privileged": false,
             "readonlyRootFilesystem": true,
             "interactive": true,
