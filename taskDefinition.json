@@ -11,6 +11,8 @@
             "image": "033879425267.dkr.ecr.us-west-2.amazonaws.com/cicd_test:latest",
             "cpu": "256",
             "memory": "512",
+            "entryPoint": ["/bin/sh", "-c"]
+            "command": ["rails", "server"]
             "links": [
             ],
             "portMappings": [
