@@ -27,6 +27,7 @@
 #"cpu": 500,
 #"memory": 500,     <---------taken out of task definition as deemed optional and scaling is why I am doing this in first place
 #
+#
 
 on:
   push:
