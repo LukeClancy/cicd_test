@@ -1,16 +1,18 @@
 {
     "family": "cicd_test_task",
-    "taskRoleArn": "AWSServiceRoleForECS",
-    "executionRoleArn": "AWSServiceRoleForECS",
+    "taskRoleArn": "ECSJustWork",
+    "executionRoleArn": "ECSJustWork",
     "networkMode": "awsvpc",
     "cpu": "256",
-    "memory": "1024",
+    "memory": "512",
     "containerDefinitions": [
         {
             "name": "cicd_test_container",
-            "image": "cicd_test:latest",
+            "image": "033879425267.dkr.ecr.us-west-2.amazonaws.com/cicd_test:latest",
             "cpu": "256",
-            "memory": "1024",
+            "memory": "512",
+            "entryPoint": ["sh", "-c"],
+            "command": ["rails", "server"],
             "links": [
             ],
             "portMappings": [
@@ -38,7 +40,7 @@
                 "initProcessEnabled": true
             },
             "user": "luke",
-            "workingDirectory": "/etc/cicd_test",
+            "workingDirectory": "/etc/cicd_test/helloWorld",
             "privileged": false,
             "readonlyRootFilesystem": true,
             "interactive": true,
@@ -59,20 +61,22 @@
                     "softLimit": 500,
                     "hardLimit": 1000
                 }
+            ],
+            "mountPoints": [
+                {
+                    "sourceVolume": "cicd_test_volume",
+                    "containerPath": "/var/scratch"
+                }
             ]
         }
     ],
     "volumes": [
         {
             "name": "cicd_test_volume",
-            "dockerVolumeConfiguration": {
-                "scope": "task",
-                "autoprovision": true
-            }
+            "host": {}
         }
     ],
     "requiresCompatibilities": [
-        "EC2",
         "FARGATE"
     ]
 }

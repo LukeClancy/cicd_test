@@ -27,6 +27,7 @@
 #"cpu": 500,
 #"memory": 500,     <---------taken out of task definition as deemed optional and scaling is why I am doing this in first place
 #
+#
 
 on:
   push:
@@ -59,7 +60,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: meritmootrepo
+        ECR_REPOSITORY: cicd_test
         IMAGE_TAG: latest
       run: |
         # Build a docker container and
@@ -81,6 +82,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: cicd_test_service
+        service: cicd_test_service_1
         cluster: mootCluster
         wait-for-service-stability: true
